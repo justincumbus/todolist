@@ -1,6 +1,14 @@
-body {
-    
-    background:purple;
-    
+#container { 
+
+     margin: 0 auto;
+     width: 360px;
+     margin-top: 360px;
+     border: 2px solid grey;
+}
+
+
+.struckthrough {
+       text-decoration: line-through;
+       color:grey;
     
 }
