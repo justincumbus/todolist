@@ -5,19 +5,15 @@ console.log("test");
 
 $(document).on("click", '.deletable',function (event) { 
     
-    $(this).parent().remove();
+    $(this).parent().fadeOut(function (){
+        $(this).parent.remove();
+        
+    });
     event.stopPropagation();
     
     
 } );
 
-$(".deletable").on("click", function(event) {
-
-    $(this).parent().remove();
-    event.stopPropagation();
-
-
-});
 
 $("input").on("keypress", function (event) {
       if (event.which == 13) {
